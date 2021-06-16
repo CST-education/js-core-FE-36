@@ -234,3 +234,4 @@ console.log(random1)
 let random2 = Math.random() * (10 - 1) + 1
 random2 = Math.round(random2)
 console.log(random2)
+
