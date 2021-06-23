@@ -5,5 +5,5 @@
 // import './js/module-2-1-functions.js'
 
 // TASKS
-import './tasks/module-1.js'
-// import './tasks/module-2.js'
+// import './tasks/module-1.js'
+import './tasks/module-2.js'
