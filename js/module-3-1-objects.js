@@ -56,10 +56,6 @@ let key3 = 'skills'
 // console.log('key2', obj[key2])
 // console.log('key3', obj[key3])
 
-// CREATE {}
-// & methods
-// this
-
 console.log(obj)
 // for in
 for (let key in obj) {
@@ -73,6 +69,7 @@ for (let key in object) {
 
 // console.dir(Object)
 
+// CREATE {}
 const newObject = Object.create(obj)
 // console.log(newObject)
 newObject.pat = 'kitten'
@@ -102,3 +99,32 @@ console.log('objValues', objValues)
 
 const objEntries = Object.entries(obj)
 console.log('objEntries', objEntries)
+
+// & methods
+// this
+
+const user = {
+  userName: 'Super User',
+
+  //   ES6 method
+  changeName(value) {
+    console.log('userName before', this.userName)
+    this.userName = value
+    console.log('userName after', this.userName)
+  },
+
+  // ES5
+  changeName: function (value) {
+    console.log(value)
+  },
+
+  changeName: (value) => {
+    console.log(value)
+  },
+}
+user.changeName('Sandra')
+// console.log(user.userName)
+
+const { userName, changeName } = user
+console.log(userName)
+changeName('Bill')
