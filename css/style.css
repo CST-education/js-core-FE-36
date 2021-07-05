@@ -1,0 +1,27 @@
+#counter {
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 350px;
+  justify-content: space-evenly;
+  font-size: 2rem;
+  border: 1px solid;
+  padding: 20px 0;
+}
+[data-increment],
+[data-decrement] {
+  border: none;
+  background: black;
+  color: whitesmoke;
+  transition: all 500ms ease;
+  padding: 10px;
+}
+[data-increment]:hover,
+[data-decrement]:hover,
+[data-increment]:focus,
+[data-decrement]:focus {
+  border: none;
+  background: whitesmoke;
+  color: black;
+  padding: 10px;
+}

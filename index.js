@@ -10,11 +10,18 @@
 // import './js/module-3-1-SPREAD_REST.js'
 // import './js/module-3-1-destructuring.js'
 
+// import './js/module-4-1-callback.js'
+import './js/module-4-1-stack.js'
+// import './js/module-4-1.closure.js'
+// import './js/module-4-1-this.js'
+
 // TASKS
 
 // import './tasks/module-1.js'
 
 // import './tasks/module-2.js'
 
-import './tasks/module-3.js'
+// import './tasks/module-3.js'
 
+// ADDITONAL
+// import './addit/counter.js'
