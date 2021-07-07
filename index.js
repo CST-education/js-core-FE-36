@@ -11,9 +11,9 @@
 // import './js/module-3-1-destructuring.js'
 
 // import './js/module-4-1-callback.js'
-import './js/module-4-1-stack.js'
+// import './js/module-4-1-stack.js'
 // import './js/module-4-1.closure.js'
-// import './js/module-4-1-this.js'
+import './js/module-4-1-this.js'
 
 // TASKS
 

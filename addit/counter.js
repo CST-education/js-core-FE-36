@@ -1,7 +1,12 @@
 import refs from './refs.js'
 const { increment, decrement, current } = refs
+
 import createCounter from '../js/module-4-1.closure.js'
+// console.log(createCounter);
+
 const counter1 = createCounter()
+// console.log(counter1);
+// console.dir(counter1);
 
 increment.addEventListener('click', () => {
   let value = counter1.increment(1)
