@@ -13,7 +13,11 @@
 // import './js/module-4-1-callback.js'
 // import './js/module-4-1-stack.js'
 // import './js/module-4-1.closure.js'
-import './js/module-4-1-this.js'
+// import './js/module-4-1-this.js'
+// import './js/module-5-1-constructor.js'
+// import './js/module-5-1-classes.js'
+// import './js/module-5-2.proto.js'
+// import './js/module-5-2.class-extends.js'
 
 // TASKS
 
@@ -22,6 +26,9 @@ import './js/module-4-1-this.js'
 // import './tasks/module-2.js'
 
 // import './tasks/module-3.js'
+
+// import './tasks/module-5.js'
+import './tasks/module-5-1.js'
 
 // ADDITONAL
 // import './addit/counter.js'
