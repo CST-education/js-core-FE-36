@@ -18,6 +18,7 @@
 // import './js/module-5-1-classes.js'
 // import './js/module-5-2.proto.js'
 // import './js/module-5-2.class-extends.js'
+import './js/module-6-1.js'
 
 // TASKS
 
@@ -28,7 +29,8 @@
 // import './tasks/module-3.js'
 
 // import './tasks/module-5.js'
-import './tasks/module-5-1.js'
+// import './tasks/module-5-1.js'
 
 // ADDITONAL
 // import './addit/counter.js'
+// import './addit/mod5.js'
