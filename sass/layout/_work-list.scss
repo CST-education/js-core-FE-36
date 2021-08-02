@@ -1,0 +1,32 @@
+@media screen and (max-width: 1199px) {
+  .section-work {
+    display: none;
+  }
+}
+
+.work-list {
+  display: flex;
+
+  .title {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    color: $title-text-white;
+    background-color: rgba(47, 48, 58, 0.8);
+    text-transform: uppercase;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+  }
+
+  .item {
+    position: relative;
+    width: calc((100% - 30px * 2) / 3);
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}

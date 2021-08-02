@@ -1,0 +1,23 @@
+.logo {
+  display: inline-block;
+  color: $title-text-color;
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.192;
+  text-decoration: none;
+  & .text {
+    color: $accent-color;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .logo {
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    font-size: 26px;
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+  }
+}

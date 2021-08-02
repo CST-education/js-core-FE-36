@@ -1,0 +1,190 @@
+.footer-page {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  color: $title-text-white;
+  background-color: #2f303a;
+  text-align: center;
+
+  .subscription {
+    width: 100%;
+    .text {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.address {
+  .home-page {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: $title-text-white;
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    text-decoration: none;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    .text {
+      color: $accent-color;
+    }
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+  }
+  .link {
+    display: block;
+    margin-top: 8px;
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+  }
+  .address-text {
+    font-style: normal;
+  }
+}
+/*======================================================*/
+.footer-page .socials-link {
+  padding-top: 60px;
+}
+.socials-link .title-link {
+  display: block;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.socials-list {
+  display: flex;
+  justify-content: center;
+}
+.footer-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+
+  &:not(:nth-last-child(-n + 1)) {
+    margin-right: 10px;
+  }
+}
+
+.footer-icon {
+  fill: $title-text-white;
+  width: 20px;
+  height: 20px;
+}
+
+/*===============================================================*/
+.subscription {
+  padding-top: 60px;
+  .text {
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+}
+.email-input {
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 16px;
+  margin-bottom: 20px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  background-color: inherit;
+}
+
+.btn-submit {
+  display: inline-flex;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 28px;
+  padding-right: 28px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: $title-text-white;
+  background: $accent-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: 0;
+}
+.icon-telegram {
+  display: block;
+  margin-left: 10px;
+  width: 24px;
+  height: 24px;
+  fill: $title-text-white;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-page .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+    .address {
+      width: calc((100% - 165px * 1) / 2);
+    }
+    .socials-link {
+      width: calc((100% - 165px * 1) / 2);
+      padding-top: 0;
+    }
+    .subscription {
+      max-width: 450px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-page {
+    text-align: start;
+    .container {
+      display: flex;
+      align-items: baseline;
+
+      .address {
+        min-width: max-content;
+        margin-right: 70px;
+      }
+      .socials-link {
+        padding-top: 0;
+        width: max-content;
+        margin-right: 93px;
+      }
+      .subscription {
+        padding-top: 0;
+        .subscription-box {
+          display: flex;
+          .email-input {
+            margin-bottom: 0;
+            margin-right: 12px;
+          }
+        }
+      }
+    }
+  }
+}

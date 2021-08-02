@@ -1,0 +1,37 @@
+.socials {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.socials-link .link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  & + .socials-link {
+    margin-left: 10px;
+  }
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+}
+
+.icon-socials {
+  display: flex;
+  fill: #afb1b8;
+  width: 20px;
+  height: 20px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .socials-link .link:hover &,
+  .socials-link .link:focus & {
+    fill: $title-text-white;
+  }
+}

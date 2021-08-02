@@ -1,0 +1,28 @@
+body {
+  background-color: $title-text-white;
+  color: $primary-text-color;
+  font-family: roboto, sans-serif;
+  letter-spacing: 0.03em;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+}
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+a {
+  text-decoration: none;
+}
+.invisible {
+  display: none;
+}
+button {
+  cursor: pointer;
+}

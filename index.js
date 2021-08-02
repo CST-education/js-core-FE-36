@@ -31,7 +31,9 @@
 // import './tasks/module-5.js'
 // import './tasks/module-5-1.js'
 
-import './tasks/module-6.js'
+// import './tasks/module-6.js'
+
+import './tasks/repeat-core.js'
 
 // ADDITONAL
 // import './addit/counter.js'
