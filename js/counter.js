@@ -1,7 +1,7 @@
-import refs from '../addit/refs.js'
+import refs from './refs.js'
 const { increment, decrement, current } = refs
 
-import createCounter from '../js/module-4-1.closure.js'
+import createCounter from '../js-core/module-4-1.closure.js'
 // console.log(createCounter);
 
 const counter1 = createCounter()

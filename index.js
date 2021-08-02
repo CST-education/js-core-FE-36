@@ -14,26 +14,26 @@
 // import './js/module-4-1-stack.js'
 // import './js/module-4-1.closure.js'
 // import './js/module-4-1-this.js'
+
 // import './js/module-5-1-constructor.js'
 // import './js/module-5-1-classes.js'
 // import './js/module-5-2.proto.js'
 // import './js/module-5-2.class-extends.js'
+
 // import './js/module-6-1.js'
+import './js-core/module-7-DOM.js'
+// import './js-core/module-7-EVENTS.js'
 
 // TASKS
 
 // import './tasks/module-1.js'
-
 // import './tasks/module-2.js'
-
 // import './tasks/module-3.js'
-
 // import './tasks/module-5.js'
 // import './tasks/module-5-1.js'
-
 // import './tasks/module-6.js'
-
-import './tasks/repeat-core.js'
+// import './tasks/repeat-core.js'
+import './js/social-links.js'
 
 // ADDITONAL
 // import './addit/counter.js'

@@ -13,11 +13,12 @@
   <body>
     <!--Шапка-->
     <header class="page-header">
-      <div class="container main-nav">
-        <a href="./index.html" class="logo">
-          <span class="text">Web</span>
+      <div class="container main-nav" id="logo-parent">
+        <!-- <a href="./index.html" class="logo">
+          <span class="text header-logo" 
+          id="headerLogo">Web</span>
           Studio
-        </a>
+        </a> -->
         <button
           type="button"
           class="button-burger"
@@ -48,10 +49,10 @@
                 <a href="./index.html" class="link">Студия</a>
               </li>
               <li class="item">
-                <a href="./portfolio.html" class="link">Портфолио</a>
+                <a href="./html/portfolio.html" class="link">Портфолио</a>
               </li>
               <li class="item">
-                <a href="" class="link">Контакты</a>
+                <a href="./html/counter.html" class="link">Доп</a>
               </li>
             </ul>
           </nav>
@@ -522,20 +523,20 @@
     </main>
     <footer class="footer-page">
       <div class="container">
-        <div class="address">
-          <a class="home-page" href="./index.html">
+        <div class="address" id="footer-logoParent">
+          <!-- <a class="home-page" href="./index.html">
             <span class="text">Web</span>
             Studio
-          </a>
-          <address class="address-text">
+          </a> -->
+          <!-- <address class="address-text">
             <span class="text">г. Киев, пр-т Леси Украинки, 26</span>
             <a href="mailto:info@example.com" class="link">info@example.com</a>
             <a href="tel:+380991111111" class="link">+38 099 111 11 11</a>
-          </address>
+          </address> -->
         </div>
-        <div class="socials-link">
+        <div class="socials-link sl-wrapper">
           <b class="title-link">присоединяйтесь</b>
-          <ul class="socials-list list">
+          <!-- <ul class="socials-list list">
             <li class="item footer-item">
               <a href="#" class="link" aria-label="ссылка на instagram">
                 <svg class="footer-icon">
@@ -564,7 +565,7 @@
                 </svg>
               </a>
             </li>
-          </ul>
+          </ul> -->
         </div>
         <div class="subscription">
           <b class="text">Подпишитесь на рассылку</b>
@@ -668,5 +669,7 @@
     <script src="./js/modal.js"></script>
     <script src="./js/form.js"></script>
     <script src="./js/menu.js"></script>
+
+    <script src="./index.js" type="module"></script>
   </body>
 </html>

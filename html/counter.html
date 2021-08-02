@@ -5,11 +5,72 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>counter</title>
-    <link rel="stylesheet" href="../css/counter.css" />
+    <link rel="stylesheet" href="../css/main.min.css" />
   </head>
   <body>
-    <header>
-      <a href="../index.html">Home</a>
+    <header class="page-header">
+      <div class="container main-nav">
+        <a href="../index.html" class="logo">
+          <span class="text">Web</span>
+          Studio
+        </a>
+        <button
+          type="button"
+          class="button-burger"
+          data-menu-button
+          aria-expanded="false"
+          aria-controls="header-menu"
+        >
+          <svg
+            class="menu-burger-icon"
+            width="40"
+            height="40"
+            aria-label="переключатель дня меню"
+          >
+            <use
+              class="menu-burger-open"
+              href="../images/sprint.svg#icon-menu-burger"
+            ></use>
+            <use
+              class="menu-burger-close"
+              href="../images/sprint.svg#icon-menu-close"
+            ></use>
+          </svg>
+        </button>
+        <div class="header-menu" data-menu>
+          <nav class="menu-nav">
+            <ul class="site-nav list">
+              <li class="item">
+                <a href="../index.html" class="link">Студия</a>
+              </li>
+              <li class="item current">
+                <a href="./portfolio.html" class="link">Портфолио</a>
+              </li>
+              <li class="item">
+                <a href="./counter.html" class="link">Доп</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="contact-nav list">
+            <li class="item">
+              <a href="mailto:info@devstudio.com" class="link">
+                <svg class="link-icon icon-envelope" width="16" height="11">
+                  <use href="../images/sprint.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com
+              </a>
+            </li>
+            <li class="item">
+              <a href="tel:+380961111111" class="link">
+                <svg class="link-icon icon-smartphone" width="10" height="15">
+                  <use href="../images/sprint.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11 11
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
     <main>
       <div id="counter">
@@ -18,6 +79,76 @@
         <button data-increment>increment</button>
       </div>
     </main>
-    <script src="../addit/counter.js" type="module"></script>
+    <footer class="footer-page">
+      <div class="container">
+        <div class="address">
+          <a class="home-page" href="../index.html">
+            <span class="text">Web</span>
+            Studio
+          </a>
+          <address class="address-text">
+            <span class="text">г. Киев, пр-т Леси Украинки, 26</span>
+            <a href="mailto:info@example.com" class="link">info@example.com</a>
+            <a href="tel:+380991111111" class="link">+38 099 111 11 11</a>
+          </address>
+        </div>
+        <div class="socials-link">
+          <b class="title-link">присоединяйтесь</b>
+          <ul class="socials-list list">
+            <li class="item footer-item">
+              <a href="#" class="link" aria-label="ссылка на instagram">
+                <svg class="footer-icon">
+                  <use href="../images/sprint.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="item footer-item">
+              <a href="#" class="link" aria-label="ссылка на twitter">
+                <svg class="footer-icon">
+                  <use href="../images/sprint.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="item footer-item">
+              <a href="#" class="link" aria-label="ссылка на facebook">
+                <svg class="footer-icon">
+                  <use href="../images/sprint.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="item footer-item">
+              <a href="#" class="link" aria-label="ссылка на linkedin">
+                <svg class="footer-icon">
+                  <use href="../images/sprint.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="subscription">
+          <b class="text">Подпишитесь на рассылку</b>
+          <form class="subscription-box js-speaker-form">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="E-mail"
+              class="email-input"
+              autocomplete="off"
+            />
+            <button type="submit" class="btn-submit">
+              Подписаться
+              <svg class="icon-telegram">
+                <use href="../images/sprint.svg#icon-icontelegram"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+    <script src="../js/form.js"></script>
+    <script src="../js/menu.js"></script>
+    <script src="../index.js" type="module"></script>
+    <script src="../js/counter.js" type="module"></script>
   </body>
 </html>
