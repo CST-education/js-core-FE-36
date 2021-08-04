@@ -1657,6 +1657,10 @@ button {
   background-color: #2196f3;
 }
 
+.button.activeBtn {
+  background-color: green;
+}
+
 @media screen and (max-width: 767px) {
   .filter-menu {
     -ms-flex-wrap: wrap;

@@ -21,8 +21,8 @@
 // import './js/module-5-2.class-extends.js'
 
 // import './js/module-6-1.js'
-import './js-core/module-7-DOM.js'
-// import './js-core/module-7-EVENTS.js'
+// import './js-core/module-7-DOM.js'
+import './js-core/module-7-EVENTS.js'
 
 // TASKS
 
@@ -33,7 +33,7 @@ import './js-core/module-7-DOM.js'
 // import './tasks/module-5-1.js'
 // import './tasks/module-6.js'
 // import './tasks/repeat-core.js'
-import './js/social-links.js'
+// import './js/social-links.js'
 
 // ADDITONAL
 // import './addit/counter.js'
