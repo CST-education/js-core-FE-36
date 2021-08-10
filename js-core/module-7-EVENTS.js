@@ -20,17 +20,17 @@ const allBtn = document.getElementById('all')
 //   allBtn.classList.toggle('activeBtn')
 // })
 
-// const allBtns = document.querySelectorAll('.button')
-// // const allBtns = document.getElementsByClassName('button')
-// console.log(allBtns)
+const allBtns = document.querySelectorAll('.button')
+// const allBtns = document.getElementsByClassName('button')
+console.log(allBtns)
 
-// allBtns.forEach((btn) => {
-//   btn.addEventListener('click', () => {
-//     // btn.style.background = 'green'
-//     console.log(btn.classList)
-//     btn.classList.toggle('activeBtn')
-//   })
-// })
+allBtns.forEach((btn) => {
+  btn.addEventListener('click', () => {
+    // btn.style.background = 'green'
+    console.log(btn.classList)
+    btn.classList.toggle('activeBtn')
+  })
+})
 
 // CLICK ===================
 

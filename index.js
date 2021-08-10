@@ -22,7 +22,15 @@
 
 // import './js/module-6-1.js'
 // import './js-core/module-7-DOM.js'
-import './js-core/module-7-EVENTS.js'
+// import './js-core/module-7-EVENTS.js'
+
+// import './js-core/module-8-propagation.js'
+
+// import './js-core/module-8-throttle.js'
+
+import './js-core/module-8-debounce.js'
+
+// import './js-core/module-8-IntersectionObserver.js'
 
 // TASKS
 
