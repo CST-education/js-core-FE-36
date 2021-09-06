@@ -1,0 +1,77 @@
+.postsList {
+  width: 75%;
+  height: 750px;
+  overflow: auto;
+  margin: 0 auto;
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+
+  padding: 100px 0;
+  border-top: 2px solid red;
+  border-bottom: 2px solid red;
+}
+
+.item {
+  width: 600px;
+  height: 600px;
+
+  margin: 10px;
+
+  position: relative;
+  border: 10px solid wheat;
+}
+
+.observe {
+  border: 10px solid green;
+}
+
+.cardInfo {
+  border: 1px solid red;
+  background-color: rgba(245, 4, 4, 0.534);
+
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+
+  opacity: 0;
+}
+.cardInfo h3 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Redressed', cursive;
+  letter-spacing: 0.8em;
+}
+.text {
+  margin: 30px 0;
+  padding: 0 30px;
+  text-align: center;
+  font-size: 1.2rem;
+
+  font-weight: bold;
+}
+.link {
+  padding: 10px 20px;
+  background-color: white;
+  box-shadow: 0 0 10px white;
+
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.item:hover .cardInfo {
+  opacity: 1;
+  transition: opacity 0.8s ease-out;
+}

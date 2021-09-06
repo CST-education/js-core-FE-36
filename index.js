@@ -28,9 +28,13 @@
 
 // import './js-core/module-8-throttle.js'
 
-import './js-core/module-8-debounce.js'
+// import './js-core/module-8-debounce.js'
 
 // import './js-core/module-8-IntersectionObserver.js'
+
+// import './js-core/module-11-async.js'
+// import './js-core/module-11-date.js'
+import './js-core/module-11-promises.js'
 
 // TASKS
 
@@ -45,4 +49,4 @@ import './js-core/module-8-debounce.js'
 
 // ADDITONAL
 // import './addit/counter.js'
-// import './addit/mod5.js'
+// import './js-core/addit/mod5.js'
