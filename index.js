@@ -34,7 +34,8 @@
 
 // import './js-core/module-11-async.js'
 // import './js-core/module-11-date.js'
-import './js-core/module-11-promises.js'
+// import './js-core/module-11-promises.js'
+import './js-core/module-12.js'
 
 // TASKS
 
