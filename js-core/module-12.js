@@ -1,5 +1,7 @@
 const hero = document.querySelector('.hero')
-console.log(hero)
+const input = document.querySelector('[name="search"]')
+const photoList = document.querySelector('.photoList')
+console.log(photoList)
 // https://bookstore.com/api/orders/289
 // http - без защиты
 
@@ -20,42 +22,52 @@ const options = {
   },
   //   body: {} // в методах POST || PUT || PATCH
 }
-
 let value = 'lotus'
-let perPage = 70
+let per_page = 7
 const base_url = `https://api.pexels.com/`
-let params = `v1/search?query=${value}&per_page=`
-const url = base_url + params
-const req = fetch(url, options)
-  .then((response) => {
-    console.log(response)
-    if (response.status === 200) {
-      return response.json()
-    } else {
-      throw new Error(`ERROR`)
-    }
-  })
-  .then((data) => {
-    console.log(data)
-    if (data.photos.length === 0) {
-      throw new Error(`по вашему запросу ничего не найдено! Повторите ввод!`)
-    }
-    return data.photos
-  })
-  .then((photos) => {
-    console.log(photos)
-    // тут вызываем функцию перебора и отрисовки полученных данных
-    createItems(hero, photos)
-  })
-  .catch((error) => {
-    alert(error)
-  })
-console.log(req)
+
+input.addEventListener('change', (e) => {
+  console.log(e.target.value)
+  const { value } = e.target
+  photoList.innerHTML = ''
+  getFetch(value, per_page, createItems) // вызов
+  e.target.value = ''
+})
+// создание функции и указание ПАРАМЕТРОВ
+function getFetch(search, perPage = 10, cb) {
+  let params = `v1/search?query=${search}&per_page=${perPage}`
+  const url = base_url + params
+
+  const req = fetch(url, options)
+    .then((r) => {
+      //   console.log(response)
+      if (r.status === 200) {
+        return r.json()
+      } else {
+        throw new Error(`ERROR`)
+      }
+    })
+    .then((data) => {
+      //   console.log(data)
+      if (data.photos.length === 0) {
+        throw new Error(`по вашему запросу ничего не найдено! Повторите ввод!`)
+      }
+      return data.photos
+    })
+    .then((photos) => {
+      console.log(photos)
+      // тут вызываем функцию перебора и отрисовки полученных данных
+      cb(photoList, photos)
+    })
+    .catch((error) => {
+      alert(error)
+    })
+}
 
 function createItems(place, array) {
-  const list = document.createElement('ul')
-  place.appendChild(list)
-  list.style.display = 'flex'
+  place.style.display = 'flex'
+  place.style.flexFlow = 'row wrap'
+
   let items = array
     .map((item) => {
       const {
@@ -69,6 +81,6 @@ function createItems(place, array) {
         </li>`
     })
     .join('')
-  console.log(items)
-  list.insertAdjacentHTML('beforeend', items)
+  //   console.log(items)
+  place.insertAdjacentHTML('beforeend', items)
 }
